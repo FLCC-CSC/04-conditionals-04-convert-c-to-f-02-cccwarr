@@ -1,8 +1,8 @@
 # FILE NAME - convert_C_to_F_02.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Caden Warren
+# DATE: 9/29/25
+# BRIEF DESCRIPTION:  conditional C to F converter
 
 
 
@@ -18,6 +18,19 @@
 
 
 
+
+
+print("===== Temperature Converter =====\n\n  1. Convert from Celsius to Fahrenheit\n  2. Convert from Fahrenheit to Celsius\n")
+
+choice = int(input("Please choose from the above menu: "))
+start = int(input("Enter a temperature to convert: "))
+
+if choice == 1:
+  temp = start * 9/5 + 32
+  print(f"{start} degrees Celsius is {temp} degrees Fahrenheit.")
+elif choice == 2:
+  temp = (start - 32 ) * 5/9
+  print(f"{start} degrees Fahrenheit is {temp} degrees Celsius.")
 
 
 
